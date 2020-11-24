@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <title>Can You Guess It??</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guesser</h1>
+        <h5>Provide range to be guessed</h5>
+        <input type="number" class="set-min" placeholder="Enter minimum number">
+        <input type="number" class="set-max" placeholder="Enter maximum number">
+        <input type="button" class="set-range" value="Set">
+
+        <div class="results">
+            <p>Guess number between <span id="min-num">1</span> and 
+                <span id="max-num">100</span>
+            </p>
+            <input type="number" id="guess" placeholder="Enter Value">
+            <button id="submit-num">Submit</button>
+            <p class="answer"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
